@@ -7,9 +7,9 @@ let users = [
     {"nom" : "Tano", "prénom" : "Ahsoka", "camp" : "Gris"},    
 ]
     let tableBody = document.getElementById("users");
-    console.log(tableBody);
+    // console.log(tableBody);
     let template = document.getElementById("usersrow");
-    console.log(template);
+    // console.log(template);
 
     users.forEach(function(user) {
         let clone = document.importNode(template.content, true);
@@ -18,10 +18,10 @@ let users = [
         td[1].textContent = user.prénom;
         td[2].textContent = user.camp;
 
-        console.log(td);
-        console.log(user.nom);
-        console.log(user.prénom);
-        console.log(user.camp);
+        // console.log(td);
+        // console.log(user.nom);
+        // console.log(user.prénom);
+        // console.log(user.camp);
 
         tableBody.appendChild(clone);
 

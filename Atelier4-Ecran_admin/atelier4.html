@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="admin_container">
     <table id="users">
         <thead>
           <tr>
@@ -15,11 +16,18 @@
             <td>Camp</td>
           </tr>
         </thead>
-        <tbody>
-        
-        </tbody>
-      </table>
-      
+       </table>
+      <div class="form">
+      <form action="">
+        <label for="">Nom :</label>
+        <input type="text" placeholder="nom ?">
+        <label for="">Prénom :</label>
+        <input type="text" placeholder="prénom ?">
+        <label for="">Camp :</label>
+        <input type="text" placeholder="camp ?">
+        <button type="submit">Save</button>
+      </form>
+    </div>
       <template id="usersrow">
         <tr class="record">
           <td ></td>
@@ -29,7 +37,7 @@
       </template>
       
 
-    
+    </div>
     <script src="atelier4.js"></script>
 </body>
 </html>
